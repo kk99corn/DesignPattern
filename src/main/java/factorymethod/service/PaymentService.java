@@ -1,5 +1,12 @@
 package factorymethod.service;
 
+/**
+ * 팩토리 메서드 패턴을 활용한 결제 서비스
+ * <p>
+ * 원하는 결제 방식의 팩토리를 주입받아 해당 Processor를 실행한다.
+ * </p>
+ */
+
 import factorymethod.factory.BankTransferProcessorFactory;
 import factorymethod.factory.CardPaymentProcessorFactory;
 import factorymethod.factory.EasyPayProcessorFactory;

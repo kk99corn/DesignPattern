@@ -1,5 +1,9 @@
 package factorymethod.payment;
 
+/**
+ * 간편결제 로직 구현체
+ */
+
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

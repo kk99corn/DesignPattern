@@ -1,6 +1,6 @@
 # 🎯 DesignPattern
 
-자바 기반으로 GoF 디자인 패턴을 직접 구현하고,  
+자바 기반으로 GoF 디자인 패턴을 직접 구현하고,
 각 패턴의 **생성 시점, 구조, 쓰레드 안전성, 테스트 가능성**을 **코드 기반으로 학습**하는 프로젝트입니다.
 
 ---
@@ -21,6 +21,7 @@
 | Singleton (Eager) | `SingletonEagerStatic` | 클래스 로딩 시점 즉시 생성, thread-safe |
 | Singleton (Lazy + Double-Checked Locking) | `SingletonLazyDoubleCheckedLocking` | getInstance 호출 시점 생성, 동기화 비용 최소화 |
 | Singleton (Static Inner Class) | `SingletonLazyStaticInner` | JVM의 클래스 로딩 특성 활용, 가장 추천되는 방식 중 하나 |
+| Factory Method | `PaymentProcessorFactory` | 결제 수단에 따라 Processor 객체를 생성 |
 
 ---
 
@@ -29,3 +30,11 @@
 ```java
 // 클래스만 로딩하고, 인스턴스 생성은 생략
 Class.forName("singleton.SingletonLazyStaticInner");
+```
+
+### 팩토리 메서드 사용 예
+
+```java
+PaymentService service = new PaymentService();
+service.executePayment(new CardPaymentProcessorFactory(), 10000);
+```
