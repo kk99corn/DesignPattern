@@ -22,6 +22,8 @@
 | Singleton (Lazy + Double-Checked Locking) | `SingletonLazyDoubleCheckedLocking` | getInstance 호출 시점 생성, 동기화 비용 최소화 |
 | Singleton (Static Inner Class) | `SingletonLazyStaticInner` | JVM의 클래스 로딩 특성 활용, 가장 추천되는 방식 중 하나 |
 | Factory Method | `PaymentProcessorFactory` | 결제 수단에 따라 Processor 객체를 생성 |
+| Abstract Factory | `PaymentFactory` | 관련된 객체군(결제 + 영수증)을 세트로 생성 |
+
 
 ---
 
