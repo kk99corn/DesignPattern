@@ -1,7 +1,7 @@
-package factorymethod.factory;
+package creational.factorymethod.factory;
 
-import factorymethod.payment.EasyPayProcessor;
-import factorymethod.payment.PaymentProcessor;
+import creational.factorymethod.payment.EasyPayProcessor;
+import creational.factorymethod.payment.PaymentProcessor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

@@ -1,4 +1,4 @@
-package singleton;
+package creational.singleton;
 
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,4 +1,4 @@
-package factorymethod.service;
+package creational.factorymethod.service;
 
 /**
  * 팩토리 메서드 패턴을 활용한 결제 서비스
@@ -7,11 +7,11 @@ package factorymethod.service;
  * </p>
  */
 
-import factorymethod.factory.BankTransferProcessorFactory;
-import factorymethod.factory.CardPaymentProcessorFactory;
-import factorymethod.factory.EasyPayProcessorFactory;
-import factorymethod.factory.PaymentProcessorFactory;
-import factorymethod.payment.PaymentProcessor;
+import creational.factorymethod.factory.BankTransferProcessorFactory;
+import creational.factorymethod.factory.CardPaymentProcessorFactory;
+import creational.factorymethod.factory.EasyPayProcessorFactory;
+import creational.factorymethod.factory.PaymentProcessorFactory;
+import creational.factorymethod.payment.PaymentProcessor;
 
 public class PaymentService {
     public void executePayment(PaymentProcessorFactory factory, int amount) {

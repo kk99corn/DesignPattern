@@ -1,4 +1,4 @@
-package factorymethod.factory;
+package creational.factorymethod.factory;
 
 /**
  * 결제 Processor 생성을 위한 팩토리의 추상 클래스
@@ -8,7 +8,7 @@ package factorymethod.factory;
  * </p>
  */
 
-import factorymethod.payment.PaymentProcessor;
+import creational.factorymethod.payment.PaymentProcessor;
 
 public abstract class PaymentProcessorFactory {
     public abstract PaymentProcessor createProcessor();

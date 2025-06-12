@@ -1,4 +1,4 @@
-package singleton;
+package creational.singleton;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,7 +12,7 @@ class SingletonEagerStaticTest {
     void testEagerLoading() throws ClassNotFoundException {
         log.info("testEagerLoading() 시작");
         // SingletonEagerStatic 클래스 로딩 - 로딩 시점에 생성자까지 호출됨
-        Class.forName("singleton.SingletonEagerStatic");
+        Class.forName("creational.singleton.SingletonEagerStatic");
         log.info("SingletonEagerStatic loaded");
 
         SingletonEagerStatic instance = SingletonEagerStatic.getInstance();
@@ -24,7 +24,7 @@ class SingletonEagerStaticTest {
     void testLazyLoading() throws ClassNotFoundException {
         log.info("testLazyLoading() 시작");
         // SingletonLazyDoubleCheckedLocking 클래스 로딩
-        Class.forName("singleton.SingletonLazyDoubleCheckedLocking");
+        Class.forName("creational.singleton.SingletonLazyDoubleCheckedLocking");
         log.info("SingletonLazyDoubleCheckedLocking loaded");
 
         // 실제 getInstance() 호출시에 생성자 호출되며, 인스턴스화 진행
@@ -37,7 +37,7 @@ class SingletonEagerStaticTest {
     void testLazyStaticInnerLoading() throws ClassNotFoundException {
         log.info("testLazyStaticInnerLoading() 시작");
         // SingletonLazyStaticInner 클래스 로딩
-        Class.forName("singleton.SingletonLazyStaticInner");
+        Class.forName("creational.singleton.SingletonLazyStaticInner");
         log.info("SingletonLazyStaticInner loaded");
 
         // 실제 getInstance() 호출시에 생성자 호출되며, 인스턴스화 진행

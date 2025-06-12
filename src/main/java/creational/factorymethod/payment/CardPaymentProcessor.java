@@ -1,4 +1,4 @@
-package factorymethod.payment;
+package creational.factorymethod.payment;
 
 /**
  * 카드 결제 로직 구현체

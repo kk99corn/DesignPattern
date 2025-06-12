@@ -1,4 +1,4 @@
-package factorymethod.payment;
+package creational.factorymethod.payment;
 
 /**
  * 계좌 이체 로직 구현체

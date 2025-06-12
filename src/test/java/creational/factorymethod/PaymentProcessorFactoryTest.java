@@ -1,16 +1,16 @@
-package factorymethod;
+package creational.factorymethod;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import factorymethod.factory.BankTransferProcessorFactory;
-import factorymethod.factory.CardPaymentProcessorFactory;
-import factorymethod.factory.EasyPayProcessorFactory;
-import factorymethod.factory.PaymentProcessorFactory;
-import factorymethod.payment.BankTransferProcessor;
-import factorymethod.payment.CardPaymentProcessor;
-import factorymethod.payment.EasyPayProcessor;
-import factorymethod.payment.PaymentProcessor;
-import factorymethod.service.PaymentService;
+import creational.factorymethod.factory.BankTransferProcessorFactory;
+import creational.factorymethod.factory.CardPaymentProcessorFactory;
+import creational.factorymethod.factory.EasyPayProcessorFactory;
+import creational.factorymethod.factory.PaymentProcessorFactory;
+import creational.factorymethod.payment.BankTransferProcessor;
+import creational.factorymethod.payment.CardPaymentProcessor;
+import creational.factorymethod.payment.EasyPayProcessor;
+import creational.factorymethod.payment.PaymentProcessor;
+import creational.factorymethod.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 

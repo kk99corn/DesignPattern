@@ -29,7 +29,7 @@
 
 ```java
 // 클래스만 로딩하고, 인스턴스 생성은 생략
-Class.forName("singleton.SingletonLazyStaticInner");
+Class.forName("creational.singleton.SingletonLazyStaticInner");
 ```
 
 ### 팩토리 메서드 사용 예
