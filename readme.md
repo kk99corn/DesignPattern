@@ -24,7 +24,7 @@
 | Factory Method | `PaymentProcessorFactory` | 결제 수단에 따라 Processor 객체를 생성 |
 | Abstract Factory | `PaymentFactory` | 관련된 객체군(결제 + 영수증)을 세트로 생성 |
 | Prototype (Shallow / Deep) | `ProductShallow`, `ProductDeep` | clone()을 통해 객체 복제, 참조 필드 복사 방식에 따라 동작 달라짐 |
-
+| Builder | `Order.Builder` | 필드 수가 많거나 옵션이 많은 객체를 유연하게 생성, 가독성 향상 |
 
 ---
 
